@@ -1,0 +1,553 @@
+[
+  {
+    "title": "Manual and Automated Determination of the RI Detector Factor for GPC/SEC Applications",
+    "products":[
+      "1100 Series LC System",
+      "1200 Series LC System",
+      "1260 Infinity II LC System",
+      "1260 Infinity LC System"
+    ],
+    "url": "https://community.agilent.com/knowledge/lc-portal/kmp/lc-articles/kp1289.manual-and-automated-determination-of-the-ri-detector-factor-for-gpc-sec-applications",
+    "issue": "The calibration of a refractive index detector, that can be performed either manually or automated, is needed for the dn/dc value determination. For light scattering measurements the correct dn/dc value of the samples is mandatory. For many common sample-solvent pairs, the dn/dc values are known and can be researched in the literature. However, if this value is unknown, it can be determined independently. The prerequisite is the calibration of the RI detector. ",
+    "background": "",
+    "requirements": "Agilent WinGPC software, RI detector, (Additional Light Scattering detector for automated RI detector factor determination)",
+    "items_required" : ["One narrowly distributed sample with known dn/dc"],
+    "steps": [
+      "1- Prepare a sample with known dn/dc and precisely determine its concentration by weighing in the sample and the solvent. Let it dissolve for at least 4-6 hours.",
+      "2- Set the RI detector Factor to 1 in the Method Window",
+      "3- Enter the dn/dc value from the sample in the sequence table and inject the sample with known injection volume.",
+      "4- Set the baseline around the polymer peak in the Raw Data window. Check thoroughly that the baseline is horizontal for the RI detector signal and that no signal fractions are cut or neglected.",
+      "5- Note the signal area A (here: A = 4.3698) from the Mass Distribution window",
+      "6- Calculate the injected mass based on the injection volume and concentration according to the formula minj. = cinj. · Vinj. (pay attention to the units!).",
+      "7- Calculate the RI detector constant using the following equation: KRID = ARID / (minj. · dn/dc). Calculate the injected mass from the concentration and injection volume you used (injected mass in mg).",
+      "8- The factor corresponds to the reciprocal value of the detector constant: Factor = 1/KRID."
+    ]
+  },
+  {
+    "title": "Turning off the 8890 GC System",
+    "products":[
+      "8890 GC System"
+    ],
+    "url": "https://community.agilent.com/knowledge/gc-portal/kmp/gc-articles/kp722.turning-off-the-8890-gc-system",
+    "issue": "Turn off the GC safely. This article outlines both short term (one week or less) and long term (more than one week) shutdown of the GC.",
+    "background": "",
+    "requirements": "Warning: Do not touch the power source at the back of the GC if the cable is plugged in and power is going through. If for any reason there are exposed wires on the power cable, do not touch the cable. Get assistance from either Agilent personnel, or a local electrician.",
+    "items_required" : [],
+    "steps_structured": [
+      {
+        "steps_to_follow":[
+          {
+            "section": "Short-term GC shutdown",
+            "steps": [
+              "1- Make sure that there is no run in progress. If there is, wait for it to finish.",
+              "2- Save any changes to the current method (if any) to prevent possible data loss.",
+              "3- Reduce oven temperature to 50 °C or lower.",
+              "4- Reduce detector and inlet temperatures between 150 and 200 °C.",
+              "5- Users can opt to turn off the detector if needed. Before doing so consider the stabilization time needed for the detector when it is turned back on",
+              "6- Turn off oxidizer and flammable gasses such as O2 and H2.",
+              "7- Reduce carrier and make up gas flows.",
+              "8- Turn off coolant gasses at their sources if applicable."
+            ]
+          }
+        ]
+      },
+      {
+        "Steps to Follow":[
+          {
+            "section": "Long-term GC shutdown",
+            "steps": [
+              "1- Get the GC in a Maintenance mode by doing the following on the GC front keypad",
+              "1.1- Press Maintenance (top menu item).",
+              "1.2- Press the Instrument.",
+              "1.3- Press Perform Maintenance.",
+              "1.4- Press Start Maintenance.",
+              "1.5- The previous steps will set the GC setpoints to a maintenance value acceptable for the shutdown.",
+              "2- Wait for the GC to cool down so the setpoints are met.",
+              "3- Turn off the GC by pressing the main power switch.",
+              "4- Turn off coolant gasses at their sources if applicable.",
+              "5- Remove the column from the GC, cap it at both ends and store it in a cool, dry place.",
+              "6- Remove the column from the GC, cap it at both ends and store it in a cool, dry place.",
+              "7- If users decide to remove gas connections at the back of the GC, they need to cap the intake fittings on the GC."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Column Configuration for the 8860/8890 GC System",
+    "products":[
+        "8860 GC System",
+        "8890 GC System"
+    ],
+    "url": "https://community.agilent.com/knowledge/gc-portal/kmp/gc-articles/kp710.column-configuration-for-the-8860-8890-gc-system",
+    "issue": "If the column configuration has been defined in the method, the instrument will calculate the pressure to maintain the target column flow rate. The column configuration must be edited or calibrated when a new column is installed, or the column is trimmed during routine maintenance.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": [
+      "1- Touch screen interface",
+      "1.1- On the touch screen press Settings > Configuration > Columns",
+      "1.2- Select the appropriate column and edit the settings. Save changes by pressing Apply",
+      "2- Browser interface by editing the configuration settings",
+      "2.1- Go to Method > Configuration > Columns in the browser interface to open the list of configured columns ",
+      "2.2- Select an action",
+      "2.2.1- To delete a column from the list: select the respective column and choose Remove.",
+      "2.2.2- To edit the configuration: double-click the column. In the dialog box, edit the column configuration as appropriate and select OK",
+      "3- Browser interface by calibrating the column",
+      "3.1- Go to Method > Configuration > Columns in the browser interface and click the appropriate column",
+      "3.2- Select Calibrate to open the Column Calibration window",
+      "3.3- Select an action",
+      "3.3.1- Set Column Length to change the column length.",
+      "3.3.2- Adjust Column Length to enter the length trimmed from the column.",
+      "3.3.3- Reset To Manufacturer Specifications when installing a new column.",
+      "3.3- Select OK to save the changes."
+    ]
+  },
+  {
+    "title": "Automated Liquid Sampler Plunger Error",
+    "products":[
+                "7650A Automatic Liquid Sampler",
+                "7683 Automatic Liquid Sampler",
+                "7693A Automatic Liquid Sampler"
+    ],
+    "url": "https://community.agilent.com/knowledge/gc-portal/kmp/gc-articles/kp743.automated-liquid-sampler-plunger-error",
+    "issue": "GC software or GC LED display shows ALS Failure code 245: Autosampler front tower plunger error or ALS Failure Code 945: Auto injector back tower plunger error. Fault LED on the tower is flashing four times and sometimes the needle will stick in the vial, giving a plunger error.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [
+                        "Gloves",
+                        "Replacement syringe. For help on Agilent syringe selection, see GC Autosampler Syringes"
+    ],
+    "steps": [
+      "1- Confirm plunger error message from the error logbook in the acquisition software, or Smart Alerts.",
+      "2- Check for a defective vial septum cap.",
+      "3- Ensure that the plunger screw is tightened so that the syringe plunger is securely connected to the plunger carrier. Loose connection of syringe plunger to plunger carrier will cause plunger error. See Figure 1 for the location of the plunger screw.\n",
+      "4- Check syringe plunger stickiness by pulling it up and down. If the plunger sticks in the syringe barrel, or if it's difficult to move the plunger smoothly, it is recommended to clean the syringe or replace the syringe if cleaning is not effective.",
+      "5- Check the installation of the syringe for proper placement and that the body of the syringe is held securely in the syringe carrier by the flange guide and syringe latch.",
+      "6- Check the smoothness of the ALS motor (shown in Figure 2). If you encounter strong resistance when performing this step",
+      "7- If ALS motor movement is smooth yet plunger errors persist, please contact your local Agilent service representative for further advice."
+    ]
+  },
+  {
+    "title": "Performing a GC Manual Injection Using OpenLab CDS",
+    "products":[
+                "6820 GC System",
+                "6850 GC System",
+                "6890 GC System",
+                "7820 GC System",
+                "7890 GC System",
+                "8850 GC System",
+                "8860 GC System",
+                "8890 GC System",
+                "OpenLab CDS"],
+    "url": "https://community.agilent.com/knowledge/gc-portal/kmp/gc-articles/kp982.performing-a-gc-manual-injection-using-openlab-cds",
+    "issue": "Manual injections are needed for a gas chromatograph without an automated sampler. They are also used for troubleshooting specific issues such as no peaks, lower peaks than expected, ghost peaks, and other chromatographic problems.",
+    "background": "",
+    "requirements": null,
+    "items_required" : ["GC syringe", "Suitable sample or standard"],
+    "steps_structured": [
+      {
+        "steps_to_follow":[
+          {
+            "section": "Prepare your syringe, sample, and hardware",
+            "steps": [
+              "1- Locate a suitable syringe. If you have an ALS (7683 or 7693), you can use the syringe from the injector tower",
+              "2- Prepare a sample or standard.",
+              "3- Verify that the syringe is working.",
+              "3.1- Manually draw up some sample or solvent (put the end of the syringe in the liquid, then pull up the plunger to draw up the liquid).",
+              "3.2- Push the plunger down to eject the liquid onto a paper towel.",
+              "3.3- Verify that you can see the drops exit the syringe. If not, the syringe is clogged.",
+              "4- Prepare the hardware so the top of the inlet is easily accessible",
+              "5- For the 7683 and 7693 ALS injector towers: remove these by lifting them off the support rod and put on the parking post on the rear of the GC (if present) or elsewhere",
+              "6- For headspace systems: depending on the transfer line connection, you may need to remove the transfer line.",
+              "7- For Purge & Trap and PAL systems: these should not need any changes"
+            ]
+          }
+        ]
+      },
+      {
+        "Steps to Follow":[
+          {
+            "section": "Prepare the method in the software",
+            "steps": [
+              "1- From the top ribbon, go to the Home tab, and click the Sequence button.",
+              "2- In the Sequence Table, locate the Injection source column. For every sequence line, from the drop-down menu in the column, select No Injection/Instrument Blank. This command will bypass the ALS. ",
+              "3- Start the sequence."
+            ]
+          }
+        ]
+      },
+      {
+        "Steps to Follow":[
+          {
+            "section": "For a Single Sample",
+            "steps": [
+              "1- From the top ribbon, go to the Home tab, and click the Single Sample button.",
+              "2- In the Single Sample Analysis window, scroll down to the Autosampler section",
+              "3- From the Injection source drop-down list, select Injection source, then select No Injection/Instrument blank ",
+              "4- To start the run, in the Single Sample Analysis window, click the Run button."
+            ]
+          }
+        ]
+      },
+      {
+        "Steps to Follow":[
+          {
+            "section": "Perform the manual injection",
+            "steps": [
+              "1- Enable Prep Run on the GC",
+              "1.1- On the 6850, 6890, 7820, and 7890: press the [Prep Run] button on the GC keypad.",
+              "1.2- On the 8860 and 8890: press the prep run icon at the bottom right off the GC touch screen in the Home view",
+              "2- Manually draw up the sample into a syringe. Put the needle tip into the sample vial below the liquid level, and pull up the syringe to the desired volume.",
+              "3- Carefully put the syringe needle into the GC inlet, by pushing it through the tiny silver funnel in the center of the green septa nut.",
+              "4- Push the plunger down, pushing the sample into the GC inlet and immediately start the run by",
+              "4.1- On the 6850, 6890, 7820, 7890: Press the [Start] button on the GC keypad",
+              "4.2- On the 8860 and 8890: press the icon on the GC touch screen"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "When to Replace the Gas Clean Carrier Gas Filter",
+    "products":[
+      "6850 GC System",
+      "6890 GC System",
+      "7820 GC System",
+      "7890 GC System",
+      "8850 GC System",
+      "8860 GC System",
+      "8890 GC System",
+      "Intuvo 9000 GC System"
+    ],
+    "url": "https://community.agilent.com/knowledge/gc-portal/kmp/gc-articles/kp981.when-to-replace-the-gas-clean-carrier-gas-filter",
+    "issue": "The Agilent Gas Clean Carrier Gas Filter delivers faster stabilization times for increased GC productivity, removes oxygen, moisture, and hydrocarbons from the carrier gas for MS applications, and provides ultimate GC column protection. The filter must be replaced before it is consumed.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps_structured": [
+      {
+        "Steps to Follow":[
+          {
+            "section": "Background",
+            "steps": [
+              "1- As gas passes through the filter material, the filter picks up the impurities and eventually becomes saturated over time. When saturation occurs, an increased amount of impurities reaches the indicating material, which causes the material to change color from the top-down."
+            ]
+          }
+        ]
+      },
+      {
+        "Steps to Follow":[
+          {
+            "section": "Resolution",
+            "steps": [
+              "1- There are two ways to know when to replace carrier gas filter.",
+              "1.1- Indicating material color change",
+              "1.2- High Oxygen and H2O content in GC/MS tune reports"
+            ]
+          }
+        ]
+      },
+      {
+        "Steps to Follow":[
+          {
+            "section": "Indicating material color change",
+            "steps": [
+              "1- When 75% or more of the indicating material’s color has changed, the filter is consumed and must be replaced",
+              "2- Agilent recommends replacing the Gas Clean Carrier Gas Filter when 75% or more of the indicator’s color has changed (from the top down) or within one year of installation"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "How To Find More Information About the Agilent Gas Chromatograph micro-ECD Wipe Test Kit",
+    "products":[
+      "6850 GC System",
+      "6890 GC System",
+      "7820 GC System",
+      "7890 GC System",
+      "8850 GC System",
+      "8860 GC System",
+      "8890 GC System",
+      "Intuvo 9000 GC System"
+    ],
+    "url": "https://community.agilent.com/knowledge/gc-portal/kmp/gc-articles/kp477.how-to-find-more-information-about-the-agilent-gas-chromatograph-micro-ecd-wipe-test-kit",
+    "issue": "The Wipe Test is an annual test that performed by end user of the micro-ECD (Micro Electron Capture Detector or uECD) to help ensure radioactive safety when using the detector. Customers sometime contact Agilent about the part number as well as the instructions on how to perform the wipe test for their GC equipped with a micro-ECD. This information is provided below.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": [
+      "1- Navigate to Agilent.com website.",
+      "2- Type in the key word micro-ECD Wipe Test Kit in the search box.",
+      "3- Capture the part number for the test kit, i.e. 18713-60050",
+      "4- Review the Agilent Electron Capture Detector Wipe Test Kit Instructions (part number 5950-3586) before performing the micro-ECD wipe test."
+    ]
+  },
+  {
+    "title": "Purging Nitrogen from Gas Clean Carrier Gas Filters",
+    "products":[
+      "5973 Series GC/MSD",
+      "5975 Series GC/MSD",
+      "5977 Series GC/MSD",
+      "7000 Series Triple Quadrupole GC/MS",
+      "7010 Series Triple Quadrupole GC/MS",
+      "JetClean Self-Cleaning Ion Source"
+    ],
+    "url": "https://community.agilent.com/knowledge/gc-portal/kmp/gc-articles/kp699.purging-nitrogen-from-gas-clean-carrier-gas-filters",
+    "issue": "After the replacement of a Gas Clean Carrier Gas FIlters, an increase in the Nitrogen percentage may be observed during the Tune, or Air and Water Check for GC/MS Systems. If other sources of leak have been already checked, a purge of the filter is required.",
+    "background": "The Gas Clean Carrier filter is shipped prefilled with nitrogen gas. This Nitrogen would contaminate other type of carrier gasses, such as Helium or Hydrogen. The Tune Report or the Air and Water Check will show an increase in the nitrogen percentage, but the Oxygen level will remain low.",
+    "requirements": null,
+    "items_required" : [],
+    "steps": [
+      "1- Lower any heated zone temperatures on the instrument to less than 100 °C.",
+      "2- Set any split vent flows (purge flows) on the GC to 400 mL/min",
+      "3- Maintain the high split vent flow for 15 minutes.",
+      "4- Load the analytical method to restore normal split vent flow as well as normal temperature in the GC/MS system",
+      "5- Perform the air and water check to verify the Nitrogen content.",
+      "6- Repeat steps 2 to 5 if the nitrogen level is not coming down to acceptable level.",
+      "7- If the nitrogen level is low enough, perform the autotune."
+    ]
+  },
+  {
+    "title": "Checking for External Leaks on 7697A Headspace",
+    "products":["7697A Headspace Sampler"],
+    "url": "https://community.agilent.com/knowledge/gc-portal/kmp/gc-articles/kp145.checking-for-external-leaks-on-7697a-headspace",
+    "issue": "There is a potential leak external to the Headspace unit that can cause loss of pressure.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": [
+      "1- Cool the HS sample loop, transfer line, and GC inlet and column oven to prevent damage during the test.",
+      "2- Turn off the HS.",
+      "3- Set the regulator pressure to 415 kPa (60 psi).",
+      "4- Fully turn the regulator pressure adjustment knob counterclockwise to shut the valve.",
+      "5- Wait 5 min.",
+      "5.1- If there is a measurable drop in pressure, there is a leak in the connections or an internal leak. Utilize a leak detector to locate any external leaks. ",
+      "5.2- No drop in pressure indicates that the external connections are not leaking"
+    ]
+  },
+  {
+    "title": "An Introduction to the Principles of Atomic Absorption Spectroscopy (AAS)",
+    "products":["240FS AA"],
+    "url": "https://www.agilent.com/en/support/atomic-spectroscopy/atomic-absorption/flame-atomic-absorption-instruments/how-does-aas-work-aas-faqs",
+    "issue": "What is atomic absorption spectroscopy?",
+    "answer": "Atomic absorption spectroscopy (AAS or AA spectroscopy) is one of the earliest elemental analysis techniques to be commercially developed. So, what is atomic absorption spectroscopy? How does atomic absorption spectroscopy work? Flame atomic absorption spectroscopy (Flame AAS or FAAS) was developed in 1952 and first commercially released as an analytical technique in the 1960s. Since then, the technique has remained popular for its reliability and simplicity. AAS is an analytical technique used to determine how much of certain elements are in a sample. It uses the principle that atoms (and ions) can absorb light at a specific, unique wavelength. When this specific wavelength of light is provided, the energy (light) is absorbed by the atom. Electrons in the atom move from the ground state to an excited state. The amount of light absorbed is measured and the concentration of the element in the sample can be calculated.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "An Introduction to the Principles of Atomic Absorption Spectroscopy (AAS)",
+    "products":["240FS AA"],
+    "url": "https://www.agilent.com/en/support/atomic-spectroscopy/atomic-absorption/flame-atomic-absorption-instruments/how-does-aas-work-aas-faqs",
+    "issue": "Metal analysis – how is it done?",
+    "answer": "The main steps in using a flame atomic absorption spectroscopy for metal analysis are:\n\n    \n\n1. Selecting the elements in the sample to be measured. For example, sodium (Na), manganese (Mn) and zinc (Zn).\n\n2. Preparing solutions of the samples, using the conventional techniques of quantitative chemical analysis. This is done to make the sample suitable for AAS analysis. These techniques include heating the sample, microwave digestion, acid digestion, high-pressure digestion and dilution.\n\n3. Preparing a set of calibrating solutions. Each solution contains accurately known concentrations of the analyte elements – Na, Mn, and Zn in this example. The range of concentrations for each element in the set is selected to include the expected concentration of that element in the sample solutions (if this is known).\n\n4. A blank solution (a solution which contains none of the elements of interest) is introduced into the flame. This is followed by the calibrating solutions and then the sample solutions. The instrument measures how much light from element-specific hollow cathode lamps is absorbed by each solution. For Na, a recommended analytical wavelength would be 330.2 nm, for Mn, 279.5 nm and Zn, 213.9 nm.\n\n5. Calibration graphs are prepared for each element from the calibration solutions. The absorbance values from the instrument are shown on the Y-axis and the concentrations of the element in each solution on the X-axis.\n\n6. The concentrations of the elements in each sample solution are determined by plotting the sample absorbance on the prepared calibration graphs. The concentrations in the original sample are then calculated after accounting for the known dilution factor.\n\n      \n\nFlame AA spectrometer analysis delivers results that list the concentration of the selected elements, typically in mg/L and down to µg/L for graphite furnace analysis.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "An Introduction to the Principles of Atomic Absorption Spectroscopy (AAS)",
+    "products":["240FS AA"],
+    "url": "https://www.agilent.com/en/support/atomic-spectroscopy/atomic-absorption/flame-atomic-absorption-instruments/how-does-aas-work-aas-faqs",
+    "issue": "What are the best applications for atomic absorption spectrometer analysis?",
+    "answer": "An atomic absorption spectrometer (AA spectrometer) is used widely where a small number of elements are routinely measured. There are many analytical methods available for a wide range of sample types.  Compared to other methods, flame AA spectrometer systems may deliver more rapid analysis for a single element. This makes flame AA spectrometer systems a useful technique for QA/QC labs or when a single sample needs to be tested.  A flame AA spectrometer can measure samples over a wide concentration range from low ppm to percent levels.\n\n     \n\nGraphite furnace AA spectrometer (GF-AAS) systems provide even lower detection limits, down to ppb levels. When measuring a small number of elements or samples, the trace analysis detection limits of GF-AAS make the technique a good alternative to the more costly ICP-OES or ICP-MS techniques.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "An Introduction to the Principles of Atomic Absorption Spectroscopy (AAS)",
+    "products":["240FS AA"],
+    "url": "https://www.agilent.com/en/support/atomic-spectroscopy/atomic-absorption/flame-atomic-absorption-instruments/how-does-aas-work-aas-faqs",
+    "issue": "Can an atomic absorption spectrometer be automated?",
+    "answer": "If you are measuring many samples per day, automation can be used to reduce the manual effort required and to speed up analysis. Adding an autosampler automates the presentation of samples and standards to the instrument. Other accessories eliminate the manual preparation of calibration standards by preparing standards from a single stock solution. Automatic online dilution of overrange samples and the online addition of an ionization buffer during analysis is also possible. While a flame AA spectrometer is routinely automated, it should never be operated unattended. This is due to the dangers of leaving an unattended flame in a laboratory.\n\n    \n\nFor graphite furnace AA spectrometer (GF-AAS) systems, automation is strongly recommended. Injecting the sample inside a graphite furnace tube can be done manually but requires skill and precision. An autosampler will remove any operator variability on sample delivery to the graphite tube, ensuring accurate and precise performance. Graphite furnace systems do not use combustible gases and they can be run without requiring supervision. If there are many samples, labs routinely run unattended graphite furnace analyses overnight to increase productivity.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "What types of compounds can be analyzed by gas chromatography?",
+    "answer": "Gas chromatography can be used to separate, detect, and measure compounds that can be volatilized while remaining thermally stable. Gases also can be introduced into a GC. The technique is widely used for many applications, including alternative energy, cannabis, chemical, consumer products, environmental, food, forensics, petroleum, and pharmaceutical testing. Gas chromatography helps scientists conduct research, ensure product quality, determine product safety, and more.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "Which gases can be used as the carrier gas for GC?",
+    "answer": "Common carrier gases for gas chromatography are helium, hydrogen, and nitrogen. Argon also is an option but is rarely used. The graph below shows the van Deemter curves for He, H2, and N2. A van Deemter curve plots the relationship between carrier gas linear velocity (u) on the X-axis and the height equivalent to a theoretical plate (HETP or H) on the Y-axis. The optimum linear velocity for a carrier gas occurs at the minimum H value on its van Deemter curve. At this velocity, band broadening effects from longitudinal diffusion, eddy diffusion, and resistance to mass transfer are minimized, resulting in sharper chromatographic peaks. Helium is by far the most popular GC carrier gas because it is inert and achieves good separation in a reasonable amount of time. Hydrogen exhibits similar chromatographic efficiency to helium but does so at a higher linear velocity. Additionally, its van Deemter curve is flatter as velocity increases, which makes hydrogen the most popular carrier gas for fast applications. Nitrogen yields the sharpest peaks but requires the lowest linear velocity to achieve, and compared to helium and hydrogen, peak broadening degrades more rapidly as velocity increases. This generally results in longer analysis times when using nitrogen unless the resolution requirements for peaks of interest can still be achieved despite the broadening at higher velocities. There are other factors to consider when using hydrogen or nitrogen instead of helium, especially when using a mass spectrometer",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "Helium is getting more expensive and difficult to get reliably. What options do I have?",
+    "answer": "There are ways to conserve helium, such as performing a helium audit and using GC tools like Agilent Gas Saver and the optional helium conservation module for 8890, 8860, 8850, and 7890 GCs. You can also consider switching to hydrogen or nitrogen as an alternative. If you change carrier gas, method parameters will have to be adjusted to compensate for the different properties",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "What are the advantages of large-volume injection?",
+    "answer": "Large-volume injection, or LVI, can be used in gas chromatography to improve the detection of trace components in a sample. It also can reduce the amount of sample preparation (pre-concentration) because the analytes of interest are focused in the GC inlet liner. Agilent GC systems can perform LVI using either the programmable temperature vaporizing (PTV) inlet or the Multimode inlet (MMI)",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "What is backflush and why should I consider it?",
+    "answer": "Backflush reverses the column flow in a GC system after the last compound of interest has been transferred to a primary analytical column (pre-column backflush), a secondary analytical column (mid-column backflush) or eluted (post-column backflush). This removes high-boiling components that can increase background, shift retention times, and result in frequent maintenance. Backflush can also reduce cycle time, increase throughput, improve data quality, and extend column life by eliminating the need to remove high boilers with a “bake out” step. Your lab will analyze more samples at lower costs.\n\n                \n\nAgilent Capillary Flow Technology modules facilitate fast and flexible implementation of backflush in our  8890, 8850 (Purged Ultimate Union only), and 7890A GC systems. The Intuvo 9000 GC can be quickly and easily configured for backflush using standard Flow Chip options. The 990 Micro GC offers channels with integrated backflush capabilities.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "I need to reduce cycle time and increase GC throughput. What options are available for fast GC?",
+    "answer": "There are several ways to implement fast GC. One is to increase the heating and cool-down rates of your GC system.\n\n    \n\nAgilent offers an oven insert that accomplishes this but it does prevent the use of the front inlet and detector positions. Another option is the Low Thermal Mass (LTM) Series 2 for 8890 and 7890 GC systems. Direct resistive column heating allows rapid temperature programming and extremely fast cool-down for significantly faster analytical cycle times compared to conventional air bath ovens.\nThe 8850 GC system features oven temperature ramp rates up to 300 °C/sec and fast oven cool-down.\nThe Intuvo 9000 GC system is designed for fast GC and higher throughput with ballistic direct column heating built in.\nIf you are performing gas analysis, you can consider the 990 Micro GC that can perform analyses in a fraction of the time of benchtop gas chromatographs.\nYou also can attain faster gas chromatography by switching from helium to hydrogen carrier gas.\n\n  \n\nA simple yet often overlooked approach for reducing analysis time is to shorten the column.  Many GC methods have excess resolution. Using a column that is half the length results in run times that are twice as fast, but the chromatographic resolution is only reduced by 1.41 (square root of 2).\n\n  \n\nAgilent provides a free method translation software tool that calculates adjustments to head pressures, oven temperature program rates, and relative run times so you can quickly implement new parameters to speed up a current GC method while ensuring that relative retention order is maintained, i.e., peaks elute in the same order.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "What is the difference between multidimensional GC, comprehensive 2D-GC, GCxGC, 2D-GC, heart cutting, and Deans switch?",
+    "answer": "Multidimensional GC is a technique that uses more than one column with different stationary phases to analyze complex samples where there may be co-eluting peaks. The columns are part of the same flow path, which increases the GC resolving power – peaks that cannot be fully separated on the first column can be separated on the second column. The ability to resolve overlapping peaks without having to perform a second injection leads to greater accuracy, more complete sample characterization, and higher throughput.\n\n     \n\n2D-GC is a type of multidimensional GC where only a section of the chromatographic run is diverted to a second column for further separation. This is also known as heart cutting and is accomplished through the use of a Deans switch or a valve in the instrument. \n\n     \n\nGCxGC, also referred to as comprehensive 2D-GC, is a special type of multidimensional GC that utilizes a modulator to collect eluent from the end of the first column and inject it onto a second column to separate otherwise co-eluting components. It differs from other multidimensional techniques in that the entire sample – not just a fraction – undergoes separation in both columns. This results in a significant increase in resolving power (peak capacity/theoretical plates) and can give additional compositional insights for complex samples.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "What are the differences between the Agilent 8850 GC and its predecessor, the 6850 GC?",
+    "answer": "The main performance differences are found in the 6th-generation EPC, oven, and FID. The 8850 GC offers an integrated touch screen and remote access through the browser interface. It also incorporates instrument intelligence with on-board help and many more diagnostic tests compared to the 6850 GC.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "What are the different types of GC columns Agilent offers?",
+    "answer": "Agilent offers standard, mass spec, Ultra Inert (UI), and Ultra Low Bleed (Q) GC columns.\n \n\nStandard columns are good for general applications, but as detectors grow more sensitive, any background noise becomes more apparent. With a mass spectrometer (MS), there are several factors that can create background noise in your chromatogram, and one such factor is column bleed.\n \n\nMass spec columns have about 50% less column bleed than the standard versions, making\nthem ideal for use with sensitive detectors, like an MS.\n \n\nAgilent Ultra Inert GC columns go through an extra step to make them more inert to active compounds, reducing the chance of chromatographic issues such as peak tailing, ghost peaks, poor resolution, and signal loss.\n \n\nAgilent Ultra Low Bleed columns (Q) combine Ultra Inert surface deactivation with Ultra Low-Bleed chemistry to deliver exceptional signal-to-noise ratios and mass spectral integrity for consistent and reliable column performance. Q columns are ideal for GC/TQ and GC/TOF use and trace level applications.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "What are the most common GC columns?",
+    "answer": "The most used stationary phases in GC are 1, 5, 624, and Wax. These columns span a range from non-polar to polar and it is good practice to have these columns on hand. The most ubiquitous columns are a 5 or 5ms phase and are a good starting point when selecting a column chemistry. Specifically for mass spec, a DB-5ms UI or DB-5Q are great general-purpose columns.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "How do I prevent my active compounds from adsorbing to the GC components?",
+    "answer": "If you are analyzing active compounds, especially at trace levels, you need to ensure that the entire GC flow path is deactivated. Our Inert Flow Path split/splitless inlet and Ultra Inert consumables (inlet liners, columns, gold seals, gold-plated flexible metal ferrules) contribute to an inert flow path that gives improved performance for sensitive analytes at very low concentration levels, extending the range and confidence of quantification and detection.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "Why am I getting extraneous peaks in my gas chromatogram?",
+    "answer": "This can be caused by several things, such as impurities in your carrier gas supply or sample solvent, dirty delivery tubing, contaminants in the syringe or inlet components, or carryover from a previous injection. Be sure you are using high-purity solvents and gases, as well as inert liners and clean septa. Always use a filter in your gas line before the GC and be sure to change it when needed. You can consider using backflush to eliminate carryover. If you are using an autosampler, use sufficient solvent washes to avoid cross-contamination from sample to sample.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "I suspect I have a leak in my split/splitless inlet. How can I troubleshoot?",
+    "answer": "This can be caused by several things, such as impurities in your carrier gas supply or sample solvent, dirty delivery tubing, contaminants in the syringe or inlet components, or carryover from a previous injection. Be sure you are using high-purity solvents and gases, as well as inert liners and clean septa. Always use a filter in your gas line before the GC and be sure to change it when needed. You can consider using backflush to eliminate carryover. If you are using an autosampler, use sufficient solvent washes to avoid cross-contamination from sample to sample.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "What is column bleed and how can I minimize it?",
+    "answer": "Column bleed is the normal background signal caused by slow degradation of the stationary phase over time. All columns bleed and the extent to which they do is influenced by the phase type, temperature, and film thickness.\n\n  \n\nBleed is typically pretty low and does not interfere with the chromatography. High bleed is when something causes the stationary phase to break down faster and more significantly than usual. This results in a high, rising background at elevated temperatures (starting at about 30 °C before the upper temperature limit) and can make accurate quantitation difficult, especially for low-concentration analytes. It’s not great for your mass spec if you’re using one and your column will bleed to death much sooner than it should, resulting in higher costs.\n\n  \n\nExcessive column bleed can be caused by things like a leak that introduces oxygen into the column, conditioning the column above the maximum temperature limit, operating at high temperatures with insufficient gas flow rates, or the presence of inorganic acids and bases in your sample.\n\n   \n\nYou can keep bleed at a manageable level and extend your column life by:\n\nEnsuring your flow path is leak free (check out our self-tightening column nuts)\nUsing a gas filter before the instrument to remove oxygen and be sure to change it when needed\nConditioning the column according to the manufacturer’s recommendations\nEnsuring your carrier gas flow rate is set properly\nMinimizing the presence of inorganic acids and bases thorough sample dilution, reducing injection volume, using higher split ratios, etc.\n  \n\nIt also helps to use low-bleed columns with high thermal stability, such as Agilent Ultra Inert GC Columns. In addition, backflush can help minimize excessive column bleed by eliminating the need to “bake out” high-boiling compounds at elevated temperatures.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "How can I avoid backflash?",
+    "answer": "Backflash is caused by overloading the inlet liner on the gas chromatograph. This phenomenon can result in poor reproducibility, sample loss, ghost peaks, carry-over, split peaks, tailing peaks, loss of resolution, and system contamination. To ensure you won’t inject too much sample, use our Vapor Volume Calculator, which determines the expansion volume of the GC sample solvent at a given inlet temperature and pressure for a specific liner. The calculator provides a quick visual indication of whether the liner capacity will be exceeded.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  },
+  {
+    "title": "Gas Chromatography FAQs",
+    "products":["8890 GC System"],
+    "url": "https://www.agilent.com/en/support/gas-chromatography/gas-chromatography-faqs",
+    "issue": "HWhere can I find firmware updates for my Agilent GCs, headspace samplers, or autosamplers?",
+    "answer": "Go to our web page to download a utility that includes firmware files for many current and older GC systems and GC-related products, such as autosamplers and headspace samplers. Once the tool has been installed on your computer, it guides you through a simple process to update the firmware for your specific instruments. Instructions for using the utility are provided in different languages. Note that firmware files for our latest gas chromatography instruments are not included in the utility but can be downloaded from the update page and installed using the tool.",
+    "background": "",
+    "requirements": null,
+    "items_required" : [],
+    "steps": []
+  }
+]
